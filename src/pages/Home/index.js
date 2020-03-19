@@ -1,9 +1,14 @@
 import React from 'react';
 
+import history from '../../services/history';
 import Button from '../../components/Button';
 import { Container } from './styles';
 
 export default function Home() {
+  function _handleOnClick() {
+    history.push('/fazer-orcamento');
+  }
+
   return (
     <Container>
       <h1>
@@ -22,7 +27,7 @@ export default function Home() {
         est risus tempus mauris, id ultrices risus metus rhoncus ligula.
         Vestibulum non dui ullamcorper, faucibus velit sit amet, consequat est.
       </p>
-      <Button />
+      <Button handleOnClick={_handleOnClick} />
     </Container>
   );
 }
