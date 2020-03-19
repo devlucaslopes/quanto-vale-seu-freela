@@ -1,0 +1,52 @@
+import { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  *:focus {
+    outline: 0;
+  }
+
+  html, body, #root {
+    height: 100%;
+    background: #e7e7ee;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body, input, button {
+    font: 16px 'Roboto', sans-serif;
+  }
+
+  input, button {
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 0.5rem 1.375rem;
+    border: 1px solid #E9EAF9;
+    border-radius: 0.5rem;
+  }
+
+  button {
+    cursor: pointer;
+  }
+`;
