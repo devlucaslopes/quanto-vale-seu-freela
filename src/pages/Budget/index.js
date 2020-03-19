@@ -28,10 +28,10 @@ const schema = Yup.object().shape({
 export default function Home() {
   const dispatch = useDispatch();
 
-  const [total, setTotal] = useState('');
-  const [dailyHours, setDailyHours] = useState('');
-  const [workedDays, setWorkedDays] = useState('');
-  const [vacation, setVacation] = useState('');
+  const [total, setTotal] = useState(1000);
+  const [dailyHours, setDailyHours] = useState(8);
+  const [workedDays, setWorkedDays] = useState(7);
+  const [vacation, setVacation] = useState(1);
 
   function _handleOnChange(_, maskedvalue, floatvalue) {
     setTotal(floatvalue);
@@ -45,6 +45,8 @@ export default function Home() {
     }
 
     dispatch(calculate(total, dailyHours, workedDays, vacation));
+
+    history.push('/resultado');
   }
 
   return (
