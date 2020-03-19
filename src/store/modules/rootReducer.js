@@ -1,7 +1,5 @@
 import { combineReducers } from 'redux';
 
-import auth from './auth/reducer';
+import budget from './budget/reducer';
 
-export default combineReducers({
-  auth,
-});
+export default combineReducers({ budget });

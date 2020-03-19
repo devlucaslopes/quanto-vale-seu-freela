@@ -27,7 +27,7 @@ export default function Home() {
         est risus tempus mauris, id ultrices risus metus rhoncus ligula.
         Vestibulum non dui ullamcorper, faucibus velit sit amet, consequat est.
       </p>
-      <Button handleOnClick={_handleOnClick} />
+      <Button handleOnClick={_handleOnClick}>Quero fazer um orçamento</Button>
     </Container>
   );
 }

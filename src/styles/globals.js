@@ -42,8 +42,7 @@ export default createGlobalStyle`
 
   input, select {
     width: 100%;
-    padding: 0.5rem 1.375rem;
-    border: 1px solid #E9EAF9;
+    padding: 1rem;
     border-radius: 0.5rem;
   }
 
